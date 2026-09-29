@@ -1,0 +1,106 @@
+*{
+margin:0% ;
+padding: 0%;
+box-sizing: border-box;
+
+}
+
+body{
+    background-color: slategray;
+}
+
+h1{
+    background-color: lawngreen;
+}
+
+/*
+PSEUDO CLASSE é uma palavra chave adicionada ao seletor que define o estilo de um elemento quando ele está em um estado específico*/
+
+h1:hover{ /*HOVER= SOBRE ou seja, quando o mouse estiver SOBRE o elemento, ele irá mudar */
+    color: indianred;
+    background-color: sienna;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+h2{
+    background-color: palevioletred;
+}
+
+/*ACTIVE -ACONTECE QUANDO O "ELEMENTO" ESTÁ ATIVO OU CLICADO*/
+h2:active{ /*QUANDO O MOUSE CLICLAR EM UM ELEMENTO ELE MUDA DE ACORDO COM AS FUNÇÕES APLICADAS*/
+color: ivory;
+background-color:lightcoral;
+
+}
+
+
+
+#caixas{
+
+    width: 100%;
+    height: 400px;
+    background-color: lightcoral;
+}
+
+
+.topo{
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+    background-color: aquamarine ;  
+    display:inline-block;
+    text-align: center;
+    margin-left: 160px;
+    padding-top: 40px;     
+}
+
+.meio{
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+    background-color:indigo;  
+    display:inline-block;
+    text-align: center;
+    margin-left: 160px;
+    padding-top: 40px;     
+}
+
+.baixo{
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+    background-color:crimson;  
+    display:inline-block;
+    text-align: center;
+    margin-left: 160px;
+    padding-top: 40px;     
+}
+
+
+.topo:hover{
+    color:cadetblue;
+    background-color: darkred;
+    transform:translateY(-20px)
+}
+
+.meio:active{
+    color:cadetblue;
+    background-color:yellowgreen;
+    transform: scale(2.0);
+}
+
+.baixo:hover{
+    color: tomato;  
+    background-color: darksalmon;
+    transform: translateX(-20px);
+    transition: 1s;
+}
+
+/*transform - transforma o elemento
+
+scale () - altera o tamanho (escala) do elemento
+
+translate () move um elemento em sua posição atual nos eixos
+/*
